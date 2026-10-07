@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>CampusBite</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;display:inline-block;vertical-align:middle;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#8d7164", "surface-dim": "#d2d9f4", "tertiary": "#006c49", "on-error-container": "#93000a", "inverse-primary": "#ffb692", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#281900", "surface-bright": "#faf8ff", "secondary-fixed": "#ffdeac", "on-tertiary-container": "#003a25", "surface": "#faf8ff", "on-primary-fixed": "#341100", "secondary": "#7e5700", "on-primary": "#ffffff", "tertiary-container": "#00af79", "error-container": "#ffdad6", "surface-container-highest": "#dae2fd", "inverse-on-surface": "#eef0ff", "surface-container-high": "#e2e7ff", "surface-tint": "#9f4200", "on-primary-fixed-variant": "#7a3000", "secondary-container": "#feb300", "on-error": "#ffffff", "surface-container": "#eaedff", "on-surface-variant": "#594136", "on-tertiary": "#ffffff", "on-background": "#131b2e", "tertiary-fixed-dim": "#4edea3", "surface-variant": "#dae2fd", "primary": "#9f4200", "on-secondary-container": "#6a4800", "primary-container": "#ff6d00", "on-primary-container": "#582100", "on-secondary": "#ffffff", "surface-container-low": "#f2f3ff", "on-tertiary-fixed": "#002113", "inverse-surface": "#283044", "on-tertiary-fixed-variant": "#005236", "tertiary-fixed": "#6ffbbe", "primary-fixed-dim": "#ffb692", "primary-fixed": "#ffdbcb", "outline-variant": "#e2bfb0", "on-surface": "#131b2e", "error": "#ba1a1a", "secondary-fixed-dim": "#ffba38", "on-secondary-fixed-variant": "#604100", "background": "#faf8ff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "space-lg": "1.5rem", "space-xl": "2.25rem", "gutter-sm": "0.75rem", "margin": "1.25rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "1rem", "space-md": "1rem" }, "fontFamily": { "body-lg": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "label-sm": ["Inter"] }, "fontSize": { "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700"}], "headline-lg": ["22px", {"lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "display-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "800"}], "headline-md": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "headline-xl": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.025em", "fontWeight": "800"}], "headline-sm": ["16px", {"lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "label-lg": ["14px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600"}] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_4px_20px_-4px_rgba(15,23,42,0.06)]"><div class="h-28 px-margin-mobile flex flex-col justify-between py-space-xs"><div class="flex items-center justify-between h-12"><div class="flex items-center gap-space-xs"><img alt="CampusBite Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WZtn06Ts46an0bxl42Ak3i5wKk_AaTQqXtsJhRBfvOcYct43aSqGUABYmZT23c5EjT-Qw3asaCb9dPY7DazDoFWNR1cNhkHhEnv8wDQf6Dwuh77y4jMrPpZT4G_g-k3wOzkjzFv3qYljxCmlEcPw6ncgJmh2c2FNHcnfE3SYIfy_Kr7kdZ2awgzRknBIFl9kBBDQF2jmU_9sRfmOTiVySFhZyn4wKTWM2naQtfr3mh5g"/><span class="font-headline-md text-headline-md font-bold tracking-tight text-primary-container">CampusBite</span></div><div class="flex items-center gap-space-xs"><button aria-label="Student discounts & alerts" class="relative w-11 h-11 flex items-center justify-center rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container active:scale-95 transition-transform"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 min-w-4 px-1 items-center justify-center rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm leading-none">%</span></button><button aria-label="Profile menu" class="w-11 h-11 flex items-center justify-center rounded-full hover:opacity-90 active:scale-95 transition-transform"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_2px_8px_rgba(0,0,0,0.1)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNj7ZRmHfkorwFPelAXWKy6uAVhCO5hFL4TSSNNbMH86XRw27sQaZPTUg9kjrHFn4PLjU961tjwKdT_7GnR9LQoQzHFgTuXyzPt-x5hwg4vZ0nryepfImnSQl5_oosWKEqeOs3Ou77HnZsppvxaJn_6pkCTt0g5dNG6Jhre86cVt6AjYSv4cKDujeCqgV4lVxzYsZzUZGHAKxSEah22X145LDn8knMy36vuWxAz3Xi"/></button></div></div><div class="flex items-center justify-between pb-space-xs"><button class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-high/90 text-on-surface shadow-[0_2px_8px_-2px_rgba(15,23,42,0.08)] active:scale-98 transition-transform"><span class="material-symbols-outlined text-primary-container text-[18px]">location_on</span><span class="font-label-md text-label-md truncate max-w-[170px]">North Quad (Bldg B)</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">arrow_drop_down</span></button><div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm"><span class="material-symbols-outlined text-[15px]">bolt</span><span>15-25 min</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-28 pb-24 bg-surface"><div class="hidden">Orders Track</div><div class="flex flex-col w-full px-margin-mobile pb-space-lg gap-space-md">
+<!-- Floating Snack Progress Banner / Live Pill -->
+<div class="flex items-center justify-between px-space-md py-space-sm rounded-full bg-secondary-fixed text-on-secondary-fixed shadow-[0_4px_16px_-2px_rgba(15,23,42,0.06)]">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-label-md text-label-md truncate">Order #CB-8921 • Live Quad Dispatch</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary font-bold shadow-sm">Fresh & Warm</span>
+</div>
+<!-- Primary ETA & Stepper Card -->
+<div class="flex flex-col p-space-md rounded-lg bg-surface-container-lowest shadow-[0_4px_20px_-2px_rgba(15,23,42,0.06)]">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">timer</span>
+          Estimated Dorm Arrival
+        </span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">12-18</h1>
+<span class="font-headline-md text-headline-md text-primary-container font-extrabold">mins</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Expected drop: <span class="font-semibold text-on-surface">11:42 PM</span> (Late Night Rush)</p>
+</div>
+<!-- Quick Delivery Pin Chip -->
+<div class="flex flex-col items-end">
+<span class="px-3 py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">speed</span>
+          Fast Track
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Quad Shortcut Active</span>
+</div>
+</div>
+<!-- Multi-stage Visual Stepper -->
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-xs">
+<!-- Track Indicator Bar -->
+<div class="relative w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-primary-container transition-all duration-700" style="width: 72%;"></div>
+</div>
+<!-- Step Nodes -->
+<div class="grid grid-cols-4 gap-1 pt-space-xs text-center">
+<!-- Node 1 -->
+<div class="flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface mt-1">Received</span>
+</div>
+<!-- Node 2 -->
+<div class="flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface mt-1">Grilling</span>
+</div>
+<!-- Node 3 (Active) -->
+<div class="flex flex-col items-center">
+<div class="relative flex items-center justify-center">
+<span class="animate-ping absolute h-7 w-7 rounded-full bg-primary-container opacity-40"></span>
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_2px_8px_rgba(255,109,0,0.5)]">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">pedal_bike</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-extrabold mt-1">On Campus</span>
+</div>
+<!-- Node 4 -->
+<div class="flex flex-col items-center opacity-45">
+<div class="w-6 h-6 rounded-full bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">apartment</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface mt-1">Lobby Drop</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Campus Pathway Graphic Map -->
+<div class="relative w-full rounded-lg overflow-hidden bg-surface-container-high shadow-[0_6px_24px_-4px_rgba(15,23,42,0.08)]">
+<!-- Map Canvas (Vector campus pathways & buildings) -->
+<div class="relative w-full h-64 bg-[#e5ecf9] overflow-hidden">
+<!-- Decorative SVG Campus Blueprint Grid -->
+<svg class="absolute inset-0 w-full h-full" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="24" id="campusGrid" patternunits="userSpaceOnUse" width="24">
+<path d="M 24 0 L 0 0 0 24" fill="none" stroke="#d5dfef" stroke-width="0.8"></path>
+</pattern>
+</defs>
+<rect fill="url(#campusGrid)" height="100%" width="100%"></rect>
+<!-- Campus Green Zones (Quad lawn) -->
+<path d="M 30,120 Q 90,60 170,110 T 260,180 Q 200,240 110,210 Z" fill="#d2f2df" opacity="0.8"></path>
+<path d="M 220,20 Q 280,10 340,50 L 320,100 Q 260,80 220,20 Z" fill="#d2f2df" opacity="0.6"></path>
+<!-- Paved Pedestrian Pathways -->
+<path d="M -10,180 C 60,170 110,140 160,100 C 210,60 260,75 390,95" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="12"></path>
+<path d="M 160,100 C 180,160 220,195 290,205" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="10"></path>
+<!-- Active Courier Animated Route Track -->
+<path class="animate-pulse" d="M 30,175 C 90,165 140,125 180,102 C 215,82 245,120 280,190" fill="none" id="deliveryRoute" stroke="#ff6d00" stroke-dasharray="6,4" stroke-linecap="round" stroke-width="4"></path>
+</svg>
+<!-- Campus Landmark Buildings (Visual Tiles) -->
+<!-- Landmark 1: Science Center -->
+<div class="absolute top-4 left-6 px-2.5 py-1.5 rounded-DEFAULT bg-surface-container-lowest/90 backdrop-blur-sm shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">biotech</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface font-bold leading-tight">Science Center</span>
+<span class="font-body-sm text-[9px] text-on-surface-variant leading-none">Hall A</span>
+</div>
+</div>
+<!-- Landmark 2: Clock Tower -->
+<div class="absolute top-6 right-8 px-2.5 py-1.5 rounded-DEFAULT bg-surface-container-lowest/90 backdrop-blur-sm shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface font-bold leading-tight">Clock Tower</span>
+<span class="font-body-sm text-[9px] text-on-surface-variant leading-none">Central Plaza</span>
+</div>
+</div>
+<!-- Moving Courier Marker (Mid Quad) -->
+<div class="absolute top-[96px] left-[170px] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center z-20 group cursor-pointer">
+<div class="relative flex items-center justify-center">
+<span class="animate-ping absolute h-10 w-10 rounded-full bg-primary-container opacity-50"></span>
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_4px_14px_rgba(255,109,0,0.5)] border-2 border-surface-container-lowest transform active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">electric_scooter</span>
+</div>
+</div>
+<div class="mt-1 px-2 py-0.5 rounded-full bg-on-background text-surface font-label-sm text-[10px] tracking-wide whitespace-nowrap shadow-md">
+          Marcus • Crossing Quad
+        </div>
+</div>
+<!-- Destination Pin: Maple Hall Dorms -->
+<div class="absolute bottom-4 right-5 flex flex-col items-end z-20">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-on-primary shadow-[0_4px_16px_rgba(159,66,0,0.35)]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">flag</span>
+<span class="font-label-md text-label-md font-bold">Maple Hall Dorms</span>
+</div>
+<div class="mt-1 px-2 py-0.5 rounded-md bg-surface-container-lowest/95 backdrop-blur-xs text-on-surface font-label-sm text-[10px] font-semibold shadow-sm">
+          📍 Front Desk Lobby Drop
+        </div>
+</div>
+<!-- Live Speed / Path Status Overlay -->
+<div class="absolute bottom-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-tertiary-container">directions_bike</span>
+<span>Speed: 11 mph • Bike Path B</span>
+</div>
+</div>
+</div>
+<!-- Pickup Verification Security Code Banner -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container-low shadow-[0_4px_16px_-2px_rgba(15,23,42,0.05)]">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">vpn_key</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Lobby Security PIN</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Show Marcus at entrance</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary font-headline-md text-headline-md font-extrabold tracking-widest shadow-[0_2px_8px_rgba(255,109,0,0.3)]">
+        #8429
+      </div>
+<button aria-label="Copy pickup PIN" class="w-9 h-9 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center hover:bg-surface-container active:scale-95 transition-all shadow-sm" id="copyPinBtn">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Courier Info & Direct Contact Card -->
+<div class="flex flex-col p-space-md rounded-lg bg-surface-container-lowest shadow-[0_4px_20px_-2px_rgba(15,23,42,0.06)]">
+<div class="flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover" data-alt="Warm smiling college student courier wearing an orange windbreaker and backpack on a sunlit university campus, natural candid portrait, friendly approachable expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnEftZzcwD0mdWsEKy_-mcO-zeOrgjgLk46_sHsSsajYq9SnZAA9mN4oFo7NKjIgJdfPRu4H6_oW5aC5WOZosRpGgU6qcoLrXjUNvNBtrp0XTEw7w6l3tjwCHexd_yfCoOXw56-mYj0eGWd-BDb8cRkDDiBh7xNa-8uDHfFOz56aEfzG-0Z3JsiOdxHEtTy3tzFxw9fb5SyyigKBv-O9dYiqpnn3b6p8soX3BOP_pe"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-tertiary-container border-2 border-surface-container-lowest flex items-center justify-center" title="Active on shift">
+<span class="material-symbols-outlined text-[10px] text-on-tertiary">check</span>
+</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Marcus Chen</h2>
+<div class="flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Senior Bio Major • EcoScooter Delivery</p>
+<span class="font-label-sm text-label-sm text-primary font-semibold mt-0.5">320+ successful campus drops</span>
+</div>
+</div>
+<!-- Quick Action Pill Buttons -->
+<div class="grid grid-cols-3 gap-2 mt-space-md">
+<!-- Call Button -->
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container active:scale-95 transition-transform font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">call</span>
+<span>Call</span>
+</button>
+<!-- Chat Button -->
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container active:scale-95 transition-transform font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">chat</span>
+<span>Chat</span>
+</button>
+<!-- Meet Outside Button -->
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-primary-container text-on-primary hover:opacity-95 active:scale-95 transition-transform font-label-md text-label-md shadow-[0_2px_8px_rgba(255,109,0,0.3)]" id="meetOutsideToggle">
+<span class="material-symbols-outlined text-[18px]">hail</span>
+<span id="meetStatusText">Meet Outside</span>
+</button>
+</div>
+<!-- Dynamic Courier Micro-Note -->
+<div class="mt-space-sm px-3 py-2 rounded-DEFAULT bg-surface-container-low flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary-container shrink-0 mt-0.5">campaign</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Marcus: <span class="text-on-surface font-medium">“I'll park right by the West bike rack next to Maple revolving doors!”</span>
+</p>
+</div>
+</div>
+<!-- Order Summary Accordion -->
+<div class="flex flex-col rounded-lg bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(15,23,42,0.06)] overflow-hidden">
+<button class="w-full flex items-center justify-between p-space-md text-left active:bg-surface-container-low transition-colors" id="accordionHeader">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">restaurant</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Quad Burritos & Bowls</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 items • $28.44 total (Dining Dollars)</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="font-label-sm text-label-sm font-semibold">Details</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200" id="accordionArrow">expand_more</span>
+</div>
+</button>
+<!-- Expandable Order Contents -->
+<div class="hidden px-space-md pb-space-md flex-col gap-space-sm" id="accordionContent">
+<div class="w-full h-[1px] bg-surface-container-high my-1"></div>
+<!-- Food Item 1 -->
+<div class="flex items-center justify-between text-body-md">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container text-primary flex items-center justify-center font-label-sm text-label-sm font-bold">1x</span>
+<span class="text-on-surface font-medium">Spicy Carnitas Burrito Bowl</span>
+</div>
+<span class="text-on-surface font-semibold">$12.50</span>
+</div>
+<!-- Food Item 2 -->
+<div class="flex items-center justify-between text-body-md">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container text-primary flex items-center justify-center font-label-sm text-label-sm font-bold">1x</span>
+<span class="text-on-surface font-medium">Loaded Queso & Chips</span>
+</div>
+<span class="text-on-surface font-semibold">$6.75</span>
+</div>
+<!-- Food Item 3 -->
+<div class="flex items-center justify-between text-body-md">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container text-primary flex items-center justify-center font-label-sm text-label-sm font-bold">1x</span>
+<span class="text-on-surface font-medium">Horchata Cold Brew (Large)</span>
+</div>
+<span class="text-on-surface font-semibold">$5.50</span>
+</div>
+<div class="w-full h-[1px] bg-surface-container-high my-1"></div>
+<!-- Financial Breakdown -->
+<div class="flex flex-col gap-1 text-body-sm text-on-surface-variant">
+<div class="flex justify-between">
+<span>Subtotal</span>
+<span>$24.75</span>
+</div>
+<div class="flex justify-between">
+<span>Student Campus Fee (Waved)</span>
+<span class="text-tertiary font-bold">FREE ($0.00)</span>
+</div>
+<div class="flex justify-between">
+<span>Campus Tax & Eco Bag</span>
+<span>$1.69</span>
+</div>
+<div class="flex justify-between">
+<span>Courier Tip (Marcus)</span>
+<span>$2.00</span>
+</div>
+<div class="flex justify-between font-label-md text-label-md text-on-surface font-bold pt-1">
+<span>Total Paid</span>
+<span>$28.44</span>
+</div>
+</div>
+<!-- Digital Receipt Action -->
+<div class="pt-space-xs flex justify-end">
+<button class="inline-flex items-center gap-1 text-primary font-label-md text-label-md hover:underline">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span>Download PDF Receipt</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Safety & Late Delivery Assistance -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container shadow-[0_2px_12px_rgba(15,23,42,0.04)]">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">shield</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Need assistance?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Late order, dorm access, or security dispatch</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-error font-label-md text-label-md font-bold hover:bg-error-container active:scale-95 transition-all shadow-sm">
+      Get Help
+    </button>
+</div>
+</div>
+<script>
+  // Simple interactive accordion toggle
+  const accordionHeader = document.getElementById('accordionHeader');
+  const accordionContent = document.getElementById('accordionContent');
+  const accordionArrow = document.getElementById('accordionArrow');
+
+  accordionHeader.addEventListener('click', () => {
+    const isHidden = accordionContent.classList.contains('hidden');
+    if (isHidden) {
+      accordionContent.classList.remove('hidden');
+      accordionContent.classList.add('flex');
+      accordionArrow.style.transform = 'rotate(180deg)';
+    } else {
+      accordionContent.classList.add('hidden');
+      accordionContent.classList.remove('flex');
+      accordionArrow.style.transform = 'rotate(0deg)';
+    }
+  });
+
+  // PIN copy feedback micro-interaction
+  const copyPinBtn = document.getElementById('copyPinBtn');
+  copyPinBtn.addEventListener('click', () => {
+    navigator.clipboard?.writeText('8429');
+    const icon = copyPinBtn.querySelector('.material-symbols-outlined');
+    icon.textContent = 'done';
+    icon.classList.add('text-tertiary');
+    setTimeout(() => {
+      icon.textContent = 'content_copy';
+      icon.classList.remove('text-tertiary');
+    }, 1800);
+  });
+
+  // Meet Outside Toggle State
+  const meetOutsideBtn = document.getElementById('meetOutsideToggle');
+  const meetStatusText = document.getElementById('meetStatusText');
+  let isMeetingOutside = false;
+
+  meetOutsideBtn.addEventListener('click', () => {
+    isMeetingOutside = !isMeetingOutside;
+    if (isMeetingOutside) {
+      meetOutsideBtn.classList.remove('bg-primary-container', 'text-on-primary');
+      meetOutsideBtn.classList.add('bg-tertiary-fixed', 'text-on-tertiary-fixed');
+      meetStatusText.textContent = 'Meeting at Curb ✓';
+    } else {
+      meetOutsideBtn.classList.add('bg-primary-container', 'text-on-primary');
+      meetOutsideBtn.classList.remove('bg-tertiary-fixed', 'text-on-tertiary-fixed');
+      meetStatusText.textContent = 'Meet Outside';
+    }
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl rounded-t-lg shadow-[0_-8px_28px_rgba(15,23,42,0.08)]" data-active-classes="text-primary-container"><div class="flex items-center justify-around h-16 px-space-xs"><a class="relative flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="explore-feed" href="#"><span class="material-symbols-outlined text-[24px]">local_fire_department</span><span class="font-label-sm text-label-sm mt-0.5">Explore</span></a><a class="relative flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="campus-deals" href="#"><span class="material-symbols-outlined text-[24px]">sell</span><span class="font-label-sm text-label-sm mt-0.5">Deals</span></a><a class="relative flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="group-cart" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1.5 -right-3 px-1.5 py-0.2 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] leading-tight font-bold shadow-[0_2px_6px_rgba(255,109,0,0.3)]">3 items</span></div><span class="font-label-sm text-label-sm mt-0.5">Group Cart</span></a><a aria-current="page" class="relative flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors text-primary-container" data-path="orders-track" href="#"><span class="material-symbols-outlined text-[24px]">moped</span><span class="font-label-sm text-label-sm mt-0.5">Live Track</span></a></div></nav></body></html>
