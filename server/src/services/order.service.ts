@@ -1,6 +1,6 @@
 import { db } from '../db/index.js';
 import { AppError, NotFoundError, ForbiddenError } from '../utils/errors.js';
-import { Order, OrderItem, OrderStatus, UserRole } from '../../../shared/types/index.js';
+import { Order, OrderItem, OrderStatus, UserRole } from '../shared/types/index.js';
 import { CartService } from './cart.service.js';
 
 export class OrderService {

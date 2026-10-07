@@ -1,5 +1,5 @@
 import { db } from '../db/index.js';
-import { Vendor } from '../../../shared/types/index.js';
+import { Vendor } from '../shared/types/index.js';
 
 export class FavoriteService {
   static async getFavorites(userId: string): Promise<Vendor[]> {

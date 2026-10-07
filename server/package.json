@@ -21,7 +21,6 @@
     "jsonwebtoken": "^9.0.2",
     "pg": "^8.13.3",
     "pg-mem": "^3.0.4",
-    "student-food-delivery-platform": "file:..",
     "zod": "^3.24.2"
   },
   "devDependencies": {

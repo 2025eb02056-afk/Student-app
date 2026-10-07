@@ -1,6 +1,6 @@
 import { db } from '../db/index.js';
 import { AppError, NotFoundError } from '../utils/errors.js';
-import { Cart, CartItem, MenuItem, Vendor } from '../../../shared/types/index.js';
+import { Cart, CartItem, MenuItem, Vendor } from '../shared/types/index.js';
 
 export class CartService {
   static async getOrCreateCart(userId: string): Promise<string> {

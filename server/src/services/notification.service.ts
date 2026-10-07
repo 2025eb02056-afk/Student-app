@@ -1,5 +1,5 @@
 import { db } from '../db/index.js';
-import { Notification } from '../../../shared/types/index.js';
+import { Notification } from '../shared/types/index.js';
 
 export class NotificationService {
   static async getNotifications(userId: string): Promise<Notification[]> {
