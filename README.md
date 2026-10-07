@@ -147,3 +147,4 @@ Visit **`http://127.0.0.1:5173`** in your browser.
     ```
   - You can also manually trigger a full Firestore sync anytime by clicking **"Sync Firestore"** in the **Admin Dashboard (`/admin`)**.
 "# Student-app" 
+"# Student-app" 
